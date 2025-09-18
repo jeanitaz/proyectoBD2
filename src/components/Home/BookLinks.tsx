@@ -6,17 +6,17 @@ export const BooksLinks = () => {
         {
             titulo: "Cien años de soledad",
             descripcion: "La obra maestra de Gabriel García Márquez sobre la familia Buendía.",
-            imagenUrl: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80",
+            imagenUrl: "https://images.ctfassets.net/4cd45et68cgf/2Ct3i2g818EuxwPDUFOyl5/82043f6b4636ecb08331b3c34e1e659a/es_mx_cads_main_main_teaser_key_art_-_coronel_vertical_27x40_rgb_pre_1.jpg?w=2000",
         },
         {
             titulo: "El Principito",
             descripcion: "Un clásico universal sobre la inocencia y la sabiduría.",
-            imagenUrl: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+            imagenUrl: "https://online.fliphtml5.com/ilypf/stri/files/large/1.webp?1601836779&1601836779",
         },
         {
             titulo: "Don Quijote de la Mancha",
             descripcion: "La gran novela de Miguel de Cervantes sobre la aventura y la imaginación.",
-            imagenUrl: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80",
+            imagenUrl: "https://cdn.kobo.com/book-images/27525b70-25dd-479b-91f6-107b3646cb3f/1200/1200/False/don-quijote-de-la-mancha-para-ninos-nueva-edicion-1.jpg",
         },
     ];
 
@@ -46,53 +46,6 @@ export const BooksLinks = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
-
-            {/* Servicios */}
-            <div className="py-20 max-w-screen-xl mx-auto px-4 grid sm:grid-cols-1 md:grid-cols-3 gap-12">
-                {[
-                    {
-                        title: "Gran Catálogo",
-                        desc: "Miles de títulos para todos los gustos y edades.",
-                        icon: "📚",
-                    },
-                    {
-                        title: "Préstamos Rápidos",
-                        desc: "Solicita y devuelve libros de forma sencilla y ágil.",
-                        icon: "⏱️",
-                    },
-                    {
-                        title: "Comunidad Lectora",
-                        desc: "Comparte opiniones y recomendaciones con otros usuarios.",
-                        icon: "🤝",
-                    },
-                ].map((b, i) => (
-                    <div
-                        key={i}
-                        className="bg-white p-16 rounded-2xl shadow-2xl text-center hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
-                    >
-                        <div className="text-5xl mb-4">{b.icon}</div>
-                        <h3 className="text-3xl font-bold mb-4">{b.title}</h3>
-                        <p className="text-gray-700 text-lg">{b.desc}</p>
-                    </div>
-                ))}
-            </div>
-
-            {/* Estadísticas */}
-            <div className="py-20 flex flex-wrap justify-center gap-12">
-                {[
-                    { num: "500+", label: "Libros", color: "bg-green-700" },
-                    { num: "200+", label: "Usuarios", color: "bg-green-600" },
-                    { num: "1000+", label: "Préstamos", color: "bg-green-500" },
-                ].map((s, i) => (
-                    <div
-                        key={i}
-                        className={`${s.color} text-white p-16 rounded-2xl shadow-2xl text-center transform transition-all duration-700 hover:scale-110 hover:rotate-1 w-64`}
-                    >
-                        <p className="text-5xl font-bold">{s.num}</p>
-                        <p className="text-2xl">{s.label}</p>
-                    </div>
-                ))}
             </div>
 
             {/* Libros destacados */}
