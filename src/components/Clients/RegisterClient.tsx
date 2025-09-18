@@ -154,7 +154,7 @@ export const RegisterClient = () => {
                             <option value={0}>Seleccione un rol</option>
                             <option value={1}>Cliente</option>
                             <option value={2}>Admin</option>
-                            <option value={3}>Superadmin</option>
+                            <option value={3}>Admin Master</option>
                         </select>
                     </div>
                     <button
