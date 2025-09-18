@@ -60,94 +60,108 @@ export const UpdateClient = () => {
         <div>
             <>
                 <Navbar />
-                <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-                    <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                <div className="max-w-2xl mx-auto mt-12 p-8 bg-gradient-to-br from-green-50 via-cyan-100 to-green-200 rounded-2xl shadow-2xl border border-cyan-300">
+                    <h2 className="text-3xl font-extrabold mb-8 text-center text-cyan-800 tracking-wide">
                         Actualizar Usuario
                     </h2>
-                    <form onSubmit={actualizarUsuario} className="space-y-4">
+                    <form onSubmit={actualizarUsuario} className="space-y-6">
                         <div>
-                            <label className="block text-gray-700 mb-1">Cédula</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Cédula
+                            </label>
                             <input
                                 type="text"
                                 name="cedula"
                                 value={Usuario.cedula}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Nombre</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Nombre
+                            </label>
                             <input
                                 type="text"
                                 name="nombre"
                                 value={Usuario.nombre}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Apellido</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Apellido
+                            </label>
                             <input
                                 type="text"
                                 name="apellido"
                                 value={Usuario.apellido}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Teléfono</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Teléfono
+                            </label>
                             <input
                                 type="text"
                                 name="telefono"
                                 value={Usuario.telefono}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Correo</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Correo
+                            </label>
                             <input
                                 type="email"
                                 name="correo"
                                 value={Usuario.correo}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Contraseña</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Contraseña
+                            </label>
                             <input
                                 type="password"
                                 name="contrasenia"
                                 value={Usuario.contrasenia}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             />
                         </div>
                         <div>
-                            <label className="block text-gray-700 mb-1">Rol</label>
+                            <label className="block text-cyan-900 font-semibold mb-2">
+                                Rol
+                            </label>
                             <select
                                 name="rolId"
                                 value={Usuario.rolId}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                                className="w-full px-4 py-2 border border-cyan-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                                 required
                             >
                                 <option value={1}>Cliente</option>
                                 <option value={2}>Admin</option>
-                                <option value={3}>AdminMater</option>
+                                <option value={3}>Superadmin</option>
                             </select>
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg"
+                            className="w-full bg-gradient-to-r from-cyan-500 via-green-400 to-cyan-600 hover:from-cyan-600 hover:to-green-500 text-white font-bold py-3 rounded-xl shadow-lg transition-all"
                         >
                             Actualizar
                         </button>

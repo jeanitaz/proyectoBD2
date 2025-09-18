@@ -54,10 +54,10 @@ export const TableClients = () => {
     };
     return (
         <div className="m-10">
-            <div className="overflow-x-auto rounded-xl shadow-2xl bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 p-4">
+            <div className="overflow-x-auto rounded-xl shadow-2xl bg-gradient-to-br from-green-50 via-cyan-100 to-green-200 p-4">
                 <table className="w-full text-sm text-left text-gray-700">
                     <thead>
-                        <tr className="bg-yellow-800 text-yellow-100">
+                        <tr className="bg-cyan-700 text-cyan-50">
                             <th className="px-6 py-4 rounded-tl-xl">Cédula</th>
                             <th className="px-6 py-4">Nombre</th>
                             <th className="px-6 py-4">Teléfono</th>
@@ -73,16 +73,16 @@ export const TableClients = () => {
                                 key={Usuario.id}
                                 className={`border-b last:border-none ${
                                     idx % 2 === 0
-                                        ? "bg-white"
-                                        : "bg-yellow-50"
-                                } hover:bg-yellow-200 transition`}
+                                        ? "bg-white/80"
+                                        : "bg-cyan-50"
+                                } hover:bg-cyan-100 transition`}
                             >
-                                <td className="px-6 py-4 font-semibold text-yellow-900">{Usuario.cedula}</td>
+                                <td className="px-6 py-4 font-semibold text-cyan-900">{Usuario.cedula}</td>
                                 <td className="px-6 py-4">{Usuario.nombre.concat(" ", Usuario.apellido)}</td>
                                 <td className="px-6 py-4">{Usuario.telefono}</td>
                                 <td className="px-6 py-4">{Usuario.correo}</td>
                                 <td className="px-6 py-4">
-                                    <span className="px-2 py-1 rounded-full bg-yellow-700 text-yellow-100 text-xs font-bold">
+                                    <span className="px-2 py-1 rounded-full bg-cyan-700 text-cyan-50 text-xs font-bold">
                                         {nombrarRol(Usuario.rolId)}
                                     </span>
                                 </td>
@@ -93,7 +93,7 @@ export const TableClients = () => {
                                         <div className="flex justify-center">
                                             <Link
                                                 to={`/usuarios/prestamos/${Usuario.id}`}
-                                                className="text-yellow-800 hover:text-yellow-900 transition"
+                                                className="text-cyan-700 hover:text-cyan-900 transition"
                                             >
                                                 <SquareChartGantt />
                                             </Link>
@@ -104,7 +104,7 @@ export const TableClients = () => {
                                     <div className="flex gap-2 justify-center">
                                         <Link
                                             to={`/usuarios/editar/${Usuario.id}`}
-                                            className="bg-yellow-700 hover:bg-yellow-800 text-yellow-100 rounded-full p-2 shadow transition"
+                                            className="bg-cyan-700 hover:bg-cyan-800 text-cyan-50 rounded-full p-2 shadow transition"
                                             title="Editar usuario"
                                         >
                                             <UserRoundPen size={20} />
@@ -116,7 +116,7 @@ export const TableClients = () => {
                                                 window.confirm("¿Deseas eliminar este Usuario?") &&
                                                 eliminarUsuario(Usuario.id)
                                             }
-                                            className="bg-red-600 hover:bg-red-700 text-white rounded-full p-2 shadow transition"
+                                            className="bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow transition"
                                             title="Eliminar usuario"
                                         >
                                             <UserRoundX size={20} />
@@ -131,7 +131,7 @@ export const TableClients = () => {
             <div className="mt-8 flex justify-end">
                 <Link
                     to={`/usuarios/registrar`}
-                    className="bg-yellow-800 hover:bg-yellow-700 text-yellow-100 font-semibold rounded-lg px-6 py-3 shadow-lg transition"
+                    className="bg-cyan-700 hover:bg-cyan-600 text-cyan-50 font-semibold rounded-lg px-6 py-3 shadow-lg transition"
                 >
                     Registrar Nuevo Usuario
                 </Link>
