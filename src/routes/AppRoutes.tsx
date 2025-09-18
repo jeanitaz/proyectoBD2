@@ -51,7 +51,7 @@ export const AppRoutes = () => {
         }
       />
       <Route
-        path="/videojuegos/registrar"
+        path="/libros/registrar"
         element={
           <ProtectedRoute roles={[2, 3]}>
             <RegistroLibro/>
@@ -60,7 +60,7 @@ export const AppRoutes = () => {
       />
 
       <Route
-        path="/videojuegos/admin"
+        path="/libros/admin"
         element={
           <ProtectedRoute roles={[2, 3]}>
             <TodosLibros />
@@ -68,7 +68,7 @@ export const AppRoutes = () => {
         }
       />
       <Route
-        path="/videojuegos/editar/:id"
+        path="/libros/editar/:id"
         element={
           <ProtectedRoute roles={[2, 3]}>
             <UpdateLibro />

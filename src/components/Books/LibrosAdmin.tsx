@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { UserRoundPen, UserRoundX } from "lucide-react"; // Reutilizamos iconos para editar/eliminar
+import { UserRoundPen, UserRoundX } from "lucide-react";
 import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
 import type { Libro } from "../../model/libro";

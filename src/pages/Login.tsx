@@ -41,7 +41,7 @@ export const Login = () => {
                     navigate("/dashboard/admin");
                     break;
                 case 3:
-                    navigate("/dashboard/superadmin");
+                    navigate("/dashboard/admin2");
                     break;
                 default:
                     navigate("/");
